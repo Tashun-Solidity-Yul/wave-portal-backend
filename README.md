@@ -24,3 +24,21 @@ npx hardhat node
 node scripts/sample-script.js
 npx hardhat help
 ```
+#Local deploy the contract
+```angular2html
+<!--start the node with 20 accounts-->
+npx hardhat node
+<!--Deploy the contract-->
+npx hardhat run scripts/deploy.js --network localhost
+<!--Rinkyby deploy-->
+npx hardhat run scripts/deploy.js --network rinkeby
+```
+
+```angular2html
+λ npx hardhat run scripts/deploy.js --network rinkeby
+Compiling 2 files with 0.8.4
+Compilation finished successfully
+Deploying contracts with account:  0x752e4c6Cf51Cf1e4752E47B18794146586FEE09d
+Account balance:  35000000000000000
+WavePortal address:  0xF70c31a51321F292525dF8D43B431Eb90296A4Cf
+```
